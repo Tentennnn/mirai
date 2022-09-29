@@ -1,0 +1,43 @@
+{
+  "y": "<:succ:843356181368012831>",
+  "m": "<:agent_help:844491090572214332>",
+  "x": "<:fail:843356181606039572>",
+  "music": {
+    "searching": "🔍",
+    "play": "<:succ:843356181368012831>",
+    "playImg": "https://images-ext-1.discordapp.net/external/DkPCBVBHBDJC8xHHCF2G7-rJXnTwj_qs78udThL8Cy0/%3Fv%3D1/https/cdn.discordapp.com/emojis/859459305152708630.gif",
+    "pause": "⏸️",
+    "resume": "▶️",
+    "skip": "⏭️",
+    "queue": "📑",
+    "stop": "⏹",
+    "volume": "🔊",
+    "loop": "🔂",
+    "autoplay": "🔁",
+    "shuffle": "🔀",
+    "addrelatedsong": "<:succ:843356181368012831>",
+    "less10Sec": "⏪",
+    "forward10Sec": "⏩",
+    "negative10vol": "🔉",
+    "plus10vol": "🔊"
+  },
+  "musicButtons": {
+    "pause": "⏸️",
+    "resume": "▶️",
+    "skip": "⏭️",
+    "queue": "📑",
+    "lyrics": "📝",
+    "stop": "⏹",
+    "loop": "🔂",
+    "autoplay": "🔁",
+    "shuffle": "🔀",
+    "less10Sec": "⏪",
+    "forward10Sec": "⏩",
+    "negative10vol": "🔉",
+    "plus10vol": "🔊"
+  },
+  "giveaway": {
+    "react": "🎉",
+    "drop": "🎁"
+  }
+}
