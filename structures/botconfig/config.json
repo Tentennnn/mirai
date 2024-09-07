@@ -1,0 +1,34 @@
+{
+    "env": {
+        "INVITE": "https://discord.gg/gUfmT2ehy8",
+        "PREFIX": "m/",
+        "WEBSITE": "tenbot.xyz",
+        "google_API": "",
+        "google_Engine_id": "",
+        "news_API": "7a11772cc0a2412a8764ac62155c4612",
+        "giphy_API": "fVOXbfcBdwPBcdbkW8fXWpovxitLDb4K"
+    },
+    "music": {
+        "musicRequestImage": "",
+        "youtubeCookie": "VISITOR_INFO1_LIVE=5sVv6DVatkc; PREF=tz=Asia.Bangkok; SID=_gcVTPLkNVazpkVli69BchUhanByLwufnrjHuWksTVTXYDa3bPy2oDM_OtWFgQobNz1dIw.; __Secure-3PSID=_gcVTPLkNVazpkVli69BchUhanByLwufnrjHuWksTVTXYDa3fxSwT_A6VEQ800BtfIqY3g.; HSID=AtEcYaY0p84h6Oe0T; SSID=Aw1eXUZzXwRsNKL79; APISID=tC4NkTP4aSBeXrF6/ALKjiUoKBog4QaEZ8; SAPISID=LSCNGO7sydnYZ031/A06QZRbat62axLIt7; __Secure-3PAPISID=LSCNGO7sydnYZ031/A06QZRbat62axLIt7; LOGIN_INFO=AFmmF2swRgIhAP8CKeTu5RwOI-V2daJX0u0mDqkqqffGHsctbONm_-HLAiEAh0QJFPLUgpp5Tka6xxoNymTCwUyKSeDFjcsTbybrDfQ:QUQ3MjNmejBRQURDZG1VSW1uczJZdWlXUWpyeElQX0lNc3hFZlBIWFpYSFpXYUhSSkZPTS1fWjU0c0JxXzVTYzJlUHluRVNpdHV5ei1sajNMbVg4THRSUWUtZkN2QTZuNGZjS1dyUTVHWHRGZ05zbk9objVZMWJjc1VyNjgxVzRqX0Zic1c3V2J4bkJKLXNSUmRLUWJ6RG1vbkFVSU5WeENB; SIDCC=AJi4QfH00kyvwLXd4uWFDkrGVuDyRMkiBi8JbCUac9GPkL9GYeLETFaXKZkn9XDh--qbsuDb; __Secure-3PSIDCC=AJi4QfEEbwp3-Pni8HBMNWyeuPGQeumaNjrpxFjyv97_WeXu4G_XrXbAu8TahLE50XdzcLoveg; YSC=gniWHlJprSo"
+    },
+    "botlogs": {
+        "inviteLogs": "1132196049210064896",
+        "feedbackChannel": "1132196049210064896",
+        "bugChannel": "1132196049210064896",
+        "suggestionChannel": "1132196049210064896",
+        "commandLogsChannel": "1132196049210064896",
+        "errorLogsChannel": "1132196049210064896",
+        "premiumLogChannel": "1132196049210064896"
+    },
+    "events": {
+        "Enable_debug": false
+    },
+    "Premium_Activator": "1126604090349191178",
+    "ownerID": ["1126604090349191178"],
+    "SlashCommandsGlobal": true,
+    "SlashCommand_Server_id": "1129848466101764116",
+    "Enable_MongoDB": true
+}
+
+

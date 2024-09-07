@@ -29,7 +29,7 @@ module.exports = {
     async execute(client, message, args, ee, prefix) {
         try {
 
-            if (!message.member.roles.cache.has(client.premiumActivator)) return message.reply({
+            if (!message.member.roles.cache.has(config.premiumActivator)) return message.reply({
                 embeds: [new MessageEmbed()
                     .setTitle(`${client.allEmojis.x} Premium System`)
                     .setDescription(`You don't have permission to use these commands!`)

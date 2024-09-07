@@ -1,6 +1,6 @@
 require('dotenv').config();
-const config = require('../../botconfig/config.json');
-const ee = require('../../structures/botconfig/embed.json');
+const config = require('./structures/botconfig/config.json');
+const ee = require('./structures/botconfig/embed.json');
 const {
   Client,
   Intents,
@@ -13,7 +13,7 @@ const voice = require("@discordjs/voice");
 
 const client = new Client({
   fetchAllMembers: false,
-  // restTimeOffset: 0,
+  const mySecret = process.env['MongoDB_TOKEN'],
   shards: 'auto',
   allowedMentions: {
     parse: ["roles", "users", "everyone"],

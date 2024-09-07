@@ -1,10 +1,10 @@
 {
-  "y": "<:succ:843356181368012831>",
-  "m": "<:agent_help:844491090572214332>",
-  "x": "<:fail:843356181606039572>",
+  "y": "✅",
+  "m": "❔",
+  "x": "❌",
   "music": {
     "searching": "🔍",
-    "play": "<:succ:843356181368012831>",
+    "play": "✅",
     "playImg": "https://images-ext-1.discordapp.net/external/DkPCBVBHBDJC8xHHCF2G7-rJXnTwj_qs78udThL8Cy0/%3Fv%3D1/https/cdn.discordapp.com/emojis/859459305152708630.gif",
     "pause": "⏸️",
     "resume": "▶️",
@@ -15,7 +15,7 @@
     "loop": "🔂",
     "autoplay": "🔁",
     "shuffle": "🔀",
-    "addrelatedsong": "<:succ:843356181368012831>",
+    "addrelatedsong": "✅",
     "less10Sec": "⏪",
     "forward10Sec": "⏩",
     "negative10vol": "🔉",

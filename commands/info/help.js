@@ -44,14 +44,14 @@ module.exports = {
           });
         }
         if (cmd.name) embed.setTitle(`${client.allEmojis.y} Information About the Commands`);
-        if (cmd.name) embed.addField("**<:join:906786246767038515> Command name**", `\`\`\`${cmd.name}\`\`\``);
-        if (cmd.description) embed.addField("**<:join:906786246767038515> Description**", `\`\`\`${cmd.description}\`\`\``);
+        if (cmd.name) embed.addField("**🙏🏻 Command name**", `\`\`\`${cmd.name}\`\`\``);
+        if (cmd.description) embed.addField("**🙏🏻 Description**", `\`\`\`${cmd.description}\`\`\``);
         if (cmd.aliases) try {
-          embed.addField("**<:join:906786246767038515> Aliases**", `\`\`\`${cmd.aliases.map((a) => `${a}`).join("`, `")}\`\`\``);
+          embed.addField("**🙏🏻 Aliases**", `\`\`\`${cmd.aliases.map((a) => `${a}`).join("`, `")}\`\`\``);
         } catch { }
-        if (cmd.cooldown) embed.addField("**<:join:906786246767038515> Cooldown**", `\`\`\`${cmd.cooldown} Seconds\`\`\``);
+        if (cmd.cooldown) embed.addField("**🙏🏻 Cooldown**", `\`\`\`${cmd.cooldown} Seconds\`\`\``);
         if (cmd.usage) {
-          embed.addField("**<:join:906786246767038515> Usage**", `\`\`\`${prefix}${cmd.usage}\`\`\``);
+          embed.addField("**🙏🏻 Usage**", `\`\`\`${prefix}${cmd.usage}\`\`\``);
           // embed.setFooter("Syntax: <> = required, [] = optional");
         }
         return message.reply({
@@ -60,29 +60,29 @@ module.exports = {
       } else {
         // Main Buttons
         let button_home = new MessageButton().setStyle('SECONDARY').setCustomId('Home').setEmoji("🏠").setLabel("Home")
-        let button_cmd_list = new MessageButton().setStyle('SECONDARY').setCustomId('Command_List').setEmoji("946645385689063484").setLabel("Commands List")
-        let button_button_menu = new MessageButton().setStyle('SECONDARY').setCustomId('Button_Menu').setEmoji("946645833582014505").setLabel("Buttons Menu")
+        let button_cmd_list = new MessageButton().setStyle('SECONDARY').setCustomId('Command_List').setEmoji("✏️").setLabel("Commands List")
+        let button_button_menu = new MessageButton().setStyle('SECONDARY').setCustomId('Button_Menu').setEmoji("🛎").setLabel("Buttons Menu")
 
         // Category Buttons
-        let button_overview = new MessageButton().setStyle('SECONDARY').setCustomId('Overview').setEmoji("906785808940425267")
+        let button_overview = new MessageButton().setStyle('SECONDARY').setCustomId('Overview').setEmoji("🗂")
         let button_info = new MessageButton().setStyle('SECONDARY').setCustomId('Information').setEmoji("🔰")
-        let button_music = new MessageButton().setStyle('SECONDARY').setCustomId('Music').setEmoji("936546598379487242")
+        let button_music = new MessageButton().setStyle('SECONDARY').setCustomId('Music').setEmoji("🎵")
         let button_setup = new MessageButton().setStyle('SECONDARY').setCustomId('Setup').setEmoji("💪")
-        let button_mod = new MessageButton().setStyle('SECONDARY').setCustomId('Moderation').setEmoji("932487033434296430")
-        let button_level = new MessageButton().setStyle('SECONDARY').setCustomId('Ranking').setEmoji('906789510996721664')
+        let button_mod = new MessageButton().setStyle('SECONDARY').setCustomId('Moderation').setEmoji("🛡")
+        let button_level = new MessageButton().setStyle('SECONDARY').setCustomId('Ranking').setEmoji('📊')
         let button_fun = new MessageButton().setStyle('SECONDARY').setCustomId('Fun').setEmoji("🕹️")
-        let button_mini = new MessageButton().setStyle('SECONDARY').setCustomId('Mini Games').setEmoji("906790704204886047")
+        let button_mini = new MessageButton().setStyle('SECONDARY').setCustomId('Mini Games').setEmoji("🎮")
         let button_giveaway = new MessageButton().setStyle('SECONDARY').setCustomId('Giveaway').setEmoji("🎉")
-        let button_ticket = new MessageButton().setStyle('SECONDARY').setCustomId('Ticket').setEmoji("944621574508646481")
+        let button_ticket = new MessageButton().setStyle('SECONDARY').setCustomId('Ticket').setEmoji("🗳")
         let button_utility = new MessageButton().setStyle('SECONDARY').setCustomId('Utility').setEmoji("🔨")
-        let button_onwerOnly = new MessageButton().setStyle('SECONDARY').setCustomId('ownerOnly').setEmoji("844293452254543942")
-        let button_report = new MessageButton().setStyle('SECONDARY').setCustomId('Report').setEmoji("946645385689063484")
+        let button_onwerOnly = new MessageButton().setStyle('SECONDARY').setCustomId('ownerOnly').setEmoji("🔨")
+        let button_report = new MessageButton().setStyle('SECONDARY').setCustomId('Report').setEmoji("📝")
 
         let menuOptions = [{
           label: 'Overview',
           description: 'My Overview of me!',
           value: 'Overview',
-          emoji: '906785808940425267',
+          emoji: '🗂',
         },
         {
           label: 'Information',
@@ -94,7 +94,7 @@ module.exports = {
           label: 'Music',
           description: 'Commands to play Music',
           value: 'Music',
-          emoji: '936546598379487242',
+          emoji: '🎵',
         },
         {
           label: 'Setup',
@@ -106,13 +106,13 @@ module.exports = {
           label: 'Moderation',
           description: 'Commands to Moderate the Server',
           value: 'Moderation',
-          emoji: '932487033434296430',
+          emoji: '🛡',
         },
         {
           label: 'Ranking',
           description: 'Commands to show Ranks',
           value: 'Ranking',
-          emoji: '906789510996721664',
+          emoji: '📊',
         },
         {
           label: 'Fun',
@@ -124,7 +124,7 @@ module.exports = {
           label: 'Mini Games',
           description: 'Commands for Minigames with the Bot',
           value: 'Mini Games',
-          emoji: '906790704204886047',
+          emoji: '🎮',
         },
         {
           label: 'Giveaway',
@@ -136,7 +136,7 @@ module.exports = {
           label: 'Ticket',
           description: 'Ticket Commands',
           value: 'Ticket',
-          emoji: '944621574508646481',
+          emoji: '🗳',
         },
         {
           label: 'Utility',
@@ -154,7 +154,7 @@ module.exports = {
           label: 'Report',
           description: 'Commands to Report bugs, feedbacks and suggestions.',
           value: 'Report',
-          emoji: '946645385689063484',
+          emoji: '📝',
         },
         ];
 
@@ -198,7 +198,7 @@ module.exports = {
           .setImage(eec.gif)
           .setFooter("Power By: tenbot.xyz")
           //.setAuthor(`${client.user.username} Help Menu`, client.user.displayAvatarURL())
-          .setTitle(`<a:settings:906790686634950678> ${client.user.username} Help Menu`)
+          .setTitle(`⚙️ ${client.user.username} Help Menu`)
 
           .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
           .setDescription(`__**Prefix Information**__
@@ -208,17 +208,17 @@ module.exports = {
             `>>> \`${prefix}setup\` and react with the Emoji for the right action,
 but you can also do \`${prefix}setup-ghostping\` e.g. \`${prefix}setup-welcome\`\n
 [My All Themes](\`${process.env.spServer}\`)
-<:agent_admin:844293451403100173> **Categories**
+🅰️ **Categories**
 
-<a:yes:906785808940425267> __Overview__
-<:join:906786246767038515> Information
-<:join:906786246767038515> Music 
-<:join:906786246767038515> Setups
-<:join:906786246767038515> Filter
-<:join:906786246767038515> Moderation
-<:join:906786246767038515> Ranking
-<:join:906786246767038515> Fun
-<:join:906786246767038515> Report`)
+✅ __Overview__
+✅ Information
+✅ Music 
+✅ Setups
+✅ Filter
+✅ Moderation
+✅ Ranking
+✅ Fun
+✅ Report`)
 
         var edited = false;
 
@@ -262,39 +262,39 @@ but you can also do \`${prefix}setup-ghostping\` e.g. \`${prefix}setup-welcome\`
                       name: `🔰┃Information`,
                       value: `${client.commands.filter((cmd) => cmd.category === "info").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
                     }, {
-                        name: `<a:Playing_Audio:936546598379487242>┃Music`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "music").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      }, {
-                        name: `💪┃Setup`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "setup").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      }, {
-                        name: `<:Moderator:932487033434296430>┃Moderation`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "moderation").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      }, {
-                        name: `<:botmaker:906789510996721664>┃Ranking`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "leveling").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      }, {
-                        name: `🕹️┃Fun`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "fun").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      }, {
-                        name: `<a:minigames:906790704204886047>┃Mini Games`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "games").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      }, {
-                        name: `🎉┃Giveaway`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "giveaway").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      }, {
-                        name: `<:ticket:944621574508646481>┃Ticket`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "ticket").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      }, {
-                        name: `🔨┃Utility`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "utility").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      }, {
-                        name: `<:agent_crown:844293452254543942>┃Owner`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "ownerOnly").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      }, {
-                        name: `<:agent_custom:844302716272508938>┃Report`,
-                        value: `${client.commands.filter((cmd) => cmd.category === "report").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
-                      })
+                      name: `🎵┃Music`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "music").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    }, {
+                      name: `💪┃Setup`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "setup").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    }, {
+                      name: `🛡┃Moderation`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "moderation").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    }, {
+                      name: `📊┃Ranking`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "leveling").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    }, {
+                      name: `🕹️┃Fun`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "fun").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    }, {
+                      name: `🎮┃Mini Games`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "games").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    }, {
+                      name: `🎉┃Giveaway`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "giveaway").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    }, {
+                      name: `🗳┃Ticket`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "ticket").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    }, {
+                      name: `🔨┃Utility`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "utility").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    }, {
+                      name: `👑┃Owner`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "ownerOnly").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    }, {
+                      name: `📝┃Report`,
+                      value: `${client.commands.filter((cmd) => cmd.category === "report").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join(" - ")}`
+                    })
                   ],
                   components: allbuttons_command_commant,
                   // ephemeral: true
@@ -430,7 +430,7 @@ but you can also do \`${prefix}setup-ghostping\` e.g. \`${prefix}setup-welcome\`
                   case "utility":
                     index = 10;
                     break;
-                                      case "owneronly":
+                  case "owneronly":
                     index = 11;
                     break;
                   case "report":
@@ -486,7 +486,7 @@ but you can also do \`${prefix}setup-ghostping\` e.g. \`${prefix}setup-welcome\`
         embeds.push(embed0)
 
         var embed1 = new MessageEmbed()
-          .addField(`<a:Playing_Audio:936546598379487242>┃__**MUSIC**__`,
+          .addField(`🎵┃__**MUSIC**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "music").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed1)
 
@@ -496,12 +496,12 @@ but you can also do \`${prefix}setup-ghostping\` e.g. \`${prefix}setup-welcome\`
         embeds.push(embed2)
 
         var embed3 = new MessageEmbed()
-          .addField(`<:Moderator:932487033434296430>┃__**MODERATION**__`,
+          .addField(`🛡┃__**MODERATION**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "moderation").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed3)
 
         var embed4 = new MessageEmbed()
-          .addField(`<:botmaker:906789510996721664>┃__**RANKING**__`,
+          .addField(`📊┃__**RANKING**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "leveling").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed4)
 
@@ -511,7 +511,7 @@ but you can also do \`${prefix}setup-ghostping\` e.g. \`${prefix}setup-welcome\`
         embeds.push(embed5)
 
         var embed6 = new MessageEmbed()
-          .addField(`<a:minigames:906790704204886047>┃__**MINI GAMES**__`,
+          .addField(`🎮┃__**MINI GAMES**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "games").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed6)
 
@@ -521,7 +521,7 @@ but you can also do \`${prefix}setup-ghostping\` e.g. \`${prefix}setup-welcome\`
         embeds.push(embed7)
 
         var embed8 = new MessageEmbed()
-          .addField(`<:ticket:944621574508646481>┃__**TICKET**__`,
+          .addField(`🗳┃__**TICKET**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "ticket").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed8)
 
@@ -531,13 +531,13 @@ but you can also do \`${prefix}setup-ghostping\` e.g. \`${prefix}setup-welcome\`
         embeds.push(embed9)
 
         var embed10 = new MessageEmbed()
-          .addField(`<:agent_crown:844293452254543942>┃__**OWNER**__`,
+          .addField(`👑┃__**OWNER**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "ownerOnly").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed10)
 
-        
+
         var embed11 = new MessageEmbed()
-          .addField(`<:report:946645385689063484>┃__**REPORT**__`,
+          .addField(`📝┃__**REPORT**__`,
             `>>> ${client.commands.filter((cmd) => cmd.category === "report").sort((a, b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`)
         embeds.push(embed11)
 

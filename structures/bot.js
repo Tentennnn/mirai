@@ -85,3 +85,5 @@ require('events').defaultMaxListeners = 0;
 });
 
 client.login(process.env.TOKEN);
+
+const keep_alive = require('./keep_alive.js');
